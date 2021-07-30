@@ -1,0 +1,98 @@
+/*
+Theme Name: Lithosphere
+Theme URI:
+Author: karmatosed
+Author URI: https://tammielister.com
+Description: Foundations should be simple
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: lithosphere
+Tags: translation-ready
+*/
+/**
+ * Base styles and resets.
+ */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--wp--custom--body--typography--font-family);
+  line-height: 1.7; }
+
+a {
+  text-decoration: none;
+  transition: all var(--l-transition-fast) ease; }
+  a:focus {
+    outline: 2px solid transparent;
+    box-shadow: 0 0 0 var(--l-border-width);
+    position: relative;
+    z-index: 2;
+    border-radius: 0.4px; }
+  a:hover {
+    box-shadow: 0 4px 0 0 currentColor, inset 0 -2px 0 0 currentColor; }
+  .has-vertical-text a {
+    box-shadow: -2px 0 0 0 currentColor, inset 2px 0 0 0 currentColor; }
+    .has-vertical-text a:hover {
+      box-shadow: -4px 0 0 0 currentColor, inset 2px 0 0 0 currentColor; }
+    .has-vertical-text a:focus {
+      box-shadow: 0 0 0 var(--l-border-width) currentColor; }
+
+figure {
+  margin-left: 0;
+  margin-right: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--l-border-radius); }
+
+::-moz-placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+:-ms-input-placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+::placeholder {
+  color: rgba(var(--l-color-text-grey), 0.8); }
+
+/* spacing on smaller screens */
+@media (max-width: 600px) {
+  html {
+    padding: 0 24px; } }
+
+@media (max-width: 1144px) {
+  html {
+    padding: 0 24px; } }
+
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+ul.wp-block-latest-posts li a {
+  background-color: var(--l-color-yellow);
+  padding: 2px 5px; }
+
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+ul.wp-block-latest-posts li a:hover {
+  background-color: var(--l-color-text-grey);
+  color: var(--l-color-background);
+  padding: 2px 5px; }
+
+a:hover, a:focus, a:active {
+  color: var(--l-color-text-grey); }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }

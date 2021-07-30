@@ -1,0 +1,12 @@
+/* spacing on smaller screens */
+@media ( max-width: 600px ) {
+	html {
+		padding: 0 24px;
+	}
+}
+
+@media ( max-width: 1144px ) { 
+    html {
+		padding: 0 24px;
+    }
+}
