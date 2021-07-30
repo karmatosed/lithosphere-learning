@@ -1,5 +1,10 @@
 //  very basic menu styling for now
 a {
+	text-decoration-skip-ink: all;
+}
+
+.wp-block-navigation a {
+	text-decoration-skip-ink: none;
 	text-decoration: none;
 	transition: all var(--l-transition-fast) ease;
 
@@ -35,7 +40,7 @@ h3 a,
 h4 a,
 h5 a,
 ul.wp-block-latest-posts li a{
-  background-color: var(--wp--preset--color--highlight);
+  background-color: var(--wp--preset--color--primary);
   padding: 2px 5px;
 }
 
@@ -46,7 +51,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 ul.wp-block-latest-posts li a:hover{
-  background-color: var(--wp--preset--color--background);
+  background-color: var(--wp--preset--color--foreground);
   color: var(--wp--preset--color--background);
   padding: 2px 5px;
 }
