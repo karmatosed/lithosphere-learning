@@ -31,7 +31,7 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#2d2d2b",
+					"color": "#1b1b1b",
 					"name": "foreground"
 				},
 				{
@@ -55,9 +55,14 @@
 					"name": "tertiary"
 				},
 				{
-					"slug": "highlights",
+					"slug": "highlight",
 					"color": "#fff0e2",
 					"name": "highlight"
+				},
+				{
+					"slug": "lowlight",
+					"color": "#2b2b2b",
+					"name": "lowlight"
 				}
 			]
 		},
@@ -118,7 +123,8 @@
 				"primary":"var(--wp--preset--color--primary)",
 				"secondary":"var(--wp--preset--color--secondary)",
 				"tertiary":"var(--wp--preset--color--tertiary)",
-				"highlight":"var(--wp--preset--color--highlight)"
+				"highlight":"var(--wp--preset--color--highlight)",
+				"lowlight":"var(--wp--preset--color--lowlight)"
 			},
 			"fontsToLoadFromGoogle": [
 				"family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -133,7 +139,8 @@
 			"margin": {
 				"baseline": "8px",
 				"horizontal": "24px",
-				"vertical": "24px"
+				"vertical": "24px",
+				"vertical-large": "48px"
 			},
 			"typography": {
 				"xs":   "0.8rem",
@@ -199,7 +206,7 @@
 		"blocks": {
 			"core/code": {
 				"color": {
-					"background": "var(--wp--custom--color--foreground)",
+					"background": "var(--wp--custom--color--lowlight)",
 					"text": "var(--wp--custom--color--primary)"
 				},
 				"spacing": {
@@ -221,6 +228,31 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"core/rss":{
+				"color":{
+					"text": "#950E7F"
+				},
+				"typography": {
+					"fontSize": "1.563rem"
+				}
+			},
+			"core/image":{
+				"color":{
+					"background": "currentColor"
+				},
+				"spacing": {
+					"margin":{
+						"bottom": "var(--wp--custom--margin--vertical-large)",
+						"top": "var(--wp--custom--margin--vertical)"
+					},
+					"padding": {
+						"bottom": "1px",
+						"top": "1px",
+						"right": "1px",
+						"left": "1px"
+					}
 				}
 			},
 			"core/navigation": {
@@ -261,6 +293,12 @@
 		},
 		"elements": {
 			"h1": {
+				"spacing":{
+					"margin":{
+						"bottom": "var(--wp--custom--margin--vertical)",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--huge)",
@@ -268,6 +306,12 @@
 				}
 			},
 			"h2": {
+				"spacing":{
+					"padding":{
+						"bottom": "var(--wp--custom--margin--vertical)/2",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--extra-large)",
@@ -276,6 +320,12 @@
 				}
 			},
 			"h3": {
+				"spacing":{
+					"padding":{
+						"bottom": "var(--wp--custom--margin--vertical)/2",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--large)",
@@ -284,6 +334,12 @@
 				}
 			},
 			"h4": {
+				"spacing":{
+					"padding":{
+						"bottom": "var(--wp--custom--margin--vertical)/2",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--normal)",
@@ -292,6 +348,12 @@
 				}
 			},
 			"h5": {
+				"spacing":{
+					"padding":{
+						"bottom": "var(--wp--custom--margin--vertical)/2",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--small)",
@@ -300,6 +362,12 @@
 				}
 			},
 			"h6": {
+				"spacing":{
+					"padding":{
+						"bottom": "var(--wp--custom--margin--vertical)/2",
+						"top": "var(--wp--custom--margin--vertical)"
+					}
+				},
 				"typography": {
 					"fontFamily": "var(--wp--custom--heading--typography--font-family)",
 					"fontSize": "var(--wp--preset--font-size--small)",

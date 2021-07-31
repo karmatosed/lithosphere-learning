@@ -35,13 +35,13 @@ img {
     padding: 0 24px; } }
 
 ::-moz-selection {
-  background-color: var(--wp--preset--color--tertiary); }
+  background-color: var(--wp--preset--color--highlight); }
 
 ::selection {
-  background-color: var(--wp--preset--color--tertiary); }
+  background-color: var(--wp--preset--color--highlight); }
 
 ::-moz-selection {
-  background-color: var(--wp--preset--color--tertiary); }
+  background-color: var(--wp--preset--color--highlight); }
 
 body {
   margin: 0;
