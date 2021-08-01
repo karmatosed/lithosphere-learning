@@ -23,7 +23,6 @@ if ( ! function_exists( 'lithosphere_support' ) ) :
 		// Enqueue editor styles.
 		add_editor_style( array( 
 			'style.css',
-			'editor-hacks.css'
 		) );
 
 		// Add support for custom units.
