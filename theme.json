@@ -8,7 +8,7 @@
 			"customWidth": true
 		},		
 		"color": {
-			"custom": false,
+			"custom": true,
 			"gradients": [],
 			"duotone": [
 				{
@@ -155,7 +155,7 @@
 		"typography": {
 			"dropCap": true,
 			"customFontSize": false,
-			"customLineHeight": false,
+			"customLineHeight": true,
 			"fontSizes": [
 				{
 					"name": "XS",
